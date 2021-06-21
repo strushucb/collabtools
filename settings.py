@@ -89,6 +89,33 @@ except KeyError:
     if not hasattr(settingsmodule, 'PROTOCOL'):
         setattr(settingsmodule, 'PROTOCOL', 'http')
 
+#TWILIO_ENABLED=False
+try:
+    setattr(settingsmodule, 'TWILIO_ENABLED', os.environ['TWILIO_ENABLED'])
+except KeyError:
+    if not hasattr(settingsmodule, 'TWILIO_ENABLED'):
+        setattr(settingsmodule, 'TWILIO_ENABLED', 'False')
+
+#TWILIO_FROM_NUMBER=""
+try:
+    setattr(settingsmodule, 'TWILIO_FROM_NUMBER', os.environ['TWILIO_FROM_NUMBER'])
+except KeyError:
+    if not hasattr(settingsmodule, 'TWILIO_FROM_NUMBER'):
+        setattr(settingsmodule, 'TWILIO_FROM_NUMBER', '')
+#TWILIO_ACCOUNT_SID
+try:
+    setattr(settingsmodule, 'TWILIO_ACCOUNT_SID', os.environ['TWILIO_ACCOUNT_SID'])
+except KeyError:
+    if not hasattr(settingsmodule, 'TWILIO_ACCOUNT_SID'):
+        setattr(settingsmodule, 'TWILIO_ACCOUNT_SID', '')
+
+#TWILIO_AUTH_TOKEN=""
+try:
+    setattr(settingsmodule, 'TWILIO_AUTH_TOKEN', os.environ['TWILIO_AUTH_TOKEN'])
+except KeyError:
+    if not hasattr(settingsmodule, 'TWILIO_AUTH_TOKEN'):
+        setattr(settingsmodule, 'TWILIO_AUTH_TOKEN', '')
+
 if WEB_IMAGE_UPLOAD_PATH and not os.path.exists(WEB_IMAGE_UPLOAD_PATH):
     os.mkdir(WEB_IMAGE_UPLOAD_PATH)
 
@@ -96,7 +123,3 @@ REDIS_HOST='redis'
 REDIS_PORT=6379
 REDIS_DB='0'
 
-TWILIO_ENABLED=False
-TWILIO_FROM_NUMBER=""
-TWILIO_ACCOUNT_SID=""
-TWILIO_AUTH_TOKEN=""
