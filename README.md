@@ -1,9 +1,3 @@
-<img src="http://canarytokens.org/resources/logo.png" width="200" />
-
-Canarytokens
-=============
-by Thinkst Applied Research
-
 Overview
 --------
 Canarytokens helps track activity and actions on your network.
