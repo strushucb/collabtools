@@ -88,7 +88,7 @@
               </div>
               <div class="col-md-10">
                 <div id="type" class="wrapper-dropdown form-control" tabindex="1">
-                  <span id="selected_token">Select your token</span>
+                  <span id="selected_token">Select your new token type</span>
                   <input name="type" type="hidden">
                 	<ul id="dropdown" class="dropdown">
                 		<li data-type="web"            data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-web"><span class="title">Web bug / URL token</span><div class="explanation">Alert when a URL is visited</div></a></li>
@@ -117,14 +117,14 @@
               <div class="col-md-1">
               </div>
               <div class="col-md-10">
-                <input class="form-control" type="text" id="endpoints" tabindex=1 placeholder="Provide an email address or webhook URL (or both space separated)">
+                <input class="form-control" type="text" id="endpoints" tabindex=1 placeholder="What email address should be alerted when the token is triggered?">
                 <div class="error-field" id="endpoints_errors"></div>
                 <input type="hidden" name="email">
                 <input type="hidden" name="webhook">
                 <input type="hidden" name="fmt">
-               <input class="form-control" type="text" name="mobile" placeholder="Enter your mobile number">
+               <input class="form-control" type="text" name="mobile" placeholder="[Optional] What mobile number should be alerted when the token is triggered?">
                         <!--<input class="form-control" type="text" name="memo" tabindex=2 placeholder="Save a reminder of where you're placing the token">-->
-                <textarea class="form-control" name="memo" tabindex=2 placeholder="Reminder note when this token is triggered."></textarea>
+                <textarea class="form-control" name="memo" tabindex=2 placeholder="What details about the token (ie, where and why you placed it) should be included in an alert?"></textarea>
                 <div class="error-field" id="memo_errors"></div>
                 <div class="field-optional field-web_image hidden">
                   {{ fileupload('web_image', text="Replace the default 1x1 GIF with your own image (PNG, GIF, JPG)") }}
@@ -164,7 +164,7 @@
               <div class="col-md-1">
               </div>
               <div class="col-md-10">
-                <p id="create-token-p"><button id="save" tabindex=10 class="btn btn-lg btn-success btn-fullwidth btn-disabled" href="#" role="button" disabled data-unseen-label="Create my Canarytoken">Fill in the fields above</button></p>
+                <p id="create-token-p"><button id="save" tabindex=10 class="btn btn-lg btn-success btn-fullwidth btn-disabled" href="#" role="button" disabled data-unseen-label="Generate the token!">Fill in the fields above</button></p>
               </div>
               <div class="col-md-1">
               </div>
@@ -601,6 +601,7 @@
 
 
       <footer class="footer">
+	<p>Privacy Policy: This website does not use any cookies. To request or delete your data, please send your request to privacy@westcountylabs.com using the email address that you provided for receiving notifications.</p> 
       </footer>
 
     </div> <!-- /container -->
