@@ -109,19 +109,19 @@ class InputChannel(Channel):
             msg['useragent'] = kwargs['src_data']['aws_keys_event_user_agent']
 
         if params.get('body_length', 999999999) <= 140:
-            msg['body'] = """Canarydrop@{time} via {channel_name}: """\
+            msg['body'] = """Token alert@{time} via {channel_name}: """\
                 .format(channel_name=self.name,
                         time=msg['time'])
             capacity = 140 - len(msg['body'])
             msg['body'] += canarydrop.memo[:capacity]
         else:
             msg['body'] = """
-One of your canarydrops was triggered.
+One of your tokens was triggered.
 Channel: {channel_name}
 Time   : {time}
 Memo   : {memo}
 {additional_data}
-Manage your settings for this Canarydrop:
+Manage your settings for this token:
 {protocol}://{host}/manage?token={token}&auth={auth}""".format(
                     channel_name=self.name,
                     time=msg['time'],

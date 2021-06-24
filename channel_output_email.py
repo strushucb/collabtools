@@ -26,7 +26,7 @@ except ImportError:
 class EmailOutputChannel(OutputChannel):
     CHANNEL = OUTPUT_CHANNEL_EMAIL
 
-    DESCRIPTION = 'Canarytoken triggered'
+    DESCRIPTION = 'Collabtool Token Triggered!'
     TIME_FORMAT = '%Y-%m-%d %H:%M:%S (UTC)'
 
     def format_report_html(self,):
@@ -46,9 +46,9 @@ class EmailOutputChannel(OutputChannel):
 
     def format_report_intro(self,):
         if self.data['channel'] == 'HTTP' or self.data['channel'] == 'AWS API Key Token':
-            template = ("An {Type} Canarytoken has been triggered")
+            template = ("An {Type} token has been triggered")
         else:
-            template = ("A {Type} Canarytoken has been triggered")
+            template = ("A {Type} token has been triggered")
 
         if 'src_ip' in self.data:
             template += " by the Source IP {src}.".format(src=self.data['src_ip'])
