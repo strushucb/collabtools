@@ -79,7 +79,7 @@
                       {% endif %}
                       {% if BasicDetails['Canarytoken'] %}
                                       <tr>
-                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Canarytoken</td>
+                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Token</td>
                                         <td style="border: 1px solid #cccccc; padding: 5px;"><code>{{ BasicDetails['Canarytoken'] }}</code></td>
                                       </tr>
                       {% endif %}
@@ -121,7 +121,7 @@
                       {% endif %}
                       {% if BasicDetails['CanaryIP'] or BasicDetails['CanaryName'] %}
                                       <tr>
-                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Canary</td>
+                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Token</td>
                                         <td style="border: 1px solid #cccccc; padding: 5px;">
                                           <code>
                                             {% if BasicDetails['CanaryIP'] %}{{ BasicDetails['CanaryIP'] }}{%endif%}
@@ -133,7 +133,7 @@
 		       {% endif %}
 		       {% if BasicDetails.get('CanaryLocation', '') %}
                                       <tr>
-                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Canary Location</td>
+                                        <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 180px; border: 1px solid #cccccc; padding: 5px;">Token Location</td>
                                         <td style="border: 1px solid #cccccc; padding: 5px;">
                                           <code>
                                             {{ BasicDetails['CanaryLocation'] | e}}
@@ -164,10 +164,10 @@
                                   <td>
                                     <table class="data" style="border: 1px solid #cccccc; font-size: 14px; border-collapse: collapse;" width="100%">
                                       <tr>
-                                       <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 120px; border: 1px solid #cccccc; padding: 5px;text-align: center;">Manage this Canarytoken <a href="{{ ManageLink }}">here</a></td> 
+                                       <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 120px; border: 1px solid #cccccc; padding: 5px;text-align: center;">Manage this token <a href="{{ ManageLink }}">here.</a></td> 
                                       </tr>
                                       <tr>
-                                       <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 120px; border: 1px solid #cccccc; padding: 5px;text-align: center;">More info on this token <a href="{{ HistoryLink }}">here</a></td> 
+                                       <td class="label" style="background: #eeeeee; font-weight: bold; _border: none; width: 120px; border: 1px solid #cccccc; padding: 5px;text-align: center;">More info on this token <a href="{{ HistoryLink }}">here.</a></td> 
                                       </tr>
                                     </table>
                                   </td>

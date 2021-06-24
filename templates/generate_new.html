@@ -91,22 +91,27 @@
                   <span id="selected_token">Select your new token type</span>
                   <input name="type" type="hidden">
                 	<ul id="dropdown" class="dropdown">
-                		<li data-type="web"            data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-web"><span class="title">Web bug / URL token</span><div class="explanation">Alert when a URL is visited</div></a></li>
-                		<li data-type="dns"            data-memo-placeholder="Hostname in /etc/hosts of server X"><a href="#" class="icon icon-dns"><span class="title">DNS token</span><div class="explanation">Alert when a hostname is requested</div></a></li>
+                    <li data-type="web"            data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-web"><span class="title">Web bug / URL token</span><div class="explanation">Alert when a URL is visited</div></a></li>
+                    <li data-type="dns"            data-memo-placeholder="Hostname in /etc/hosts of server X"><a href="#" class="icon icon-dns"><span class="title">DNS token</span><div class="explanation">Alert when a hostname is requested</div></a></li>
                     <li data-type="smtp"           data-memo-placeholder="Email address in Events database"><a href="#" class="icon icon-email"><span class="title">Unique email address</span><div class="explanation">Alert when an email is sent to a unique address</div></a></li>
-                		<li data-type="web_image"      data-memo-placeholder="Image embedded in router X's admin interface"><a href="#" class="icon icon-web-image"><span class="title">Custom Image Web bug</span><div class="explanation">Alert when an image you uploaded is viewed</div></a></li>
+                    <li data-type="web_image"      data-memo-placeholder="Image embedded in router X's admin interface"><a href="#" class="icon icon-web-image"><span class="title">Custom Image Web bug</span><div class="explanation">Alert when an image you uploaded is viewed</div></a></li>
                     <li data-type="ms_word"        data-memo-placeholder="Word document placed at U:\Users\Sally\Reports\feb.doc"><a href="#" class="icon icon-word"><span class="title">Microsoft Word Document</span><div class="explanation">Get alerted when a document is opened in Microsoft Word</div></a></li>
                     <li data-type="adobe_pdf"      data-memo-placeholder="PDF document placed at U:\Users\Sipho\Reports\feb.pdf"><a href="#" class="icon icon-pdf"><span class="title">Acrobat Reader PDF Document</span><div class="explanation">Get alerted when a PDF document is opened in Acrobat Reader</div></a></li>
                     <li data-type="windows_dir"    data-memo-placeholder="Directory token placed in U:\Users\Sarah\CreditCardReports\"><a href="#" class="icon icon-folder"><span class="title">Windows Folder</span><div class="explanation">Be notified when a Windows Folder is browsed in Windows Explorer</div></a></li>
                     <li data-type="signed_exe"     data-memo-placeholder="Tokened whoami.exe on web server WEB01"><a href="#" class="icon icon-exe"><span class="title">Custom exe / binary</span><div class="explanation">Fire an alert when an EXE or DLL is executed</div></a></li>
                     <li data-type="cloned_website" data-memo-placeholder="Cloned website token for https://thinkst.com"><a href="#" class="icon icon-clonedsite"><span class="title">Cloned Website</span><div class="explanation">Trigger an alert when your website is cloned</div></a></li>
-                    <li data-type="sql_server"     data-memo-placeholder="SELET SQL Server token on SQL01/CreditCards"><a href="#" class="icon icon-sqlserver"><span class="title">SQL Server</span><div class="explanation">Get alerted when MS SQL Server databases are accessed</div></a></li>
+ <!-- SQL Server                   <li data-type="sql_server"     data-memo-placeholder="SELET SQL Server token on SQL01/CreditCards"><a href="#" class="icon icon-sqlserver"><span class="title">SQL Server</span><div class="explanation">Get alerted when MS SQL Server databases are accessed</div></a></li>
+      SQL Server -->
                     <li data-type="qr_code"        data-memo-placeholder="QR code underneath Simon's phone batter"><a href="#" class="icon icon-qrcode"><span class="title">QR Code</span><div class="explanation">Generate a QR code for physical tokens</div></a></li>
-                    <li data-type="svn"            data-memo-placeholder="SVN token on REPO01/ourmainrepo"><a href="#" class="icon icon-svn"><span class="title">SVN</span><div class="explanation">Alert when someone checks out an SVN repository</div></a></li>
-                    <li data-type="aws_keys"       data-memo-placeholder="AWS keys placed on Jim's laptop"><a href="#" class="icon icon-aws"><span class="title">AWS keys</span><div class="explanation">Alert when AWS key is used</div></a></li>
-                    <li data-type="fast_redirect"  data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-redirect"><span class="title">Fast Redirect</span><div class="explanation">Alert when a URL is visited, User is redirected</div></a></li>
-                    <li data-type="slow_redirect"  data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-redirect"><span class="title">Slow Redirect</span><div class="explanation">Alert when a URL is visited, User is redirected (Moar info is grabbed!)</div></a></li>
-                    <li data-type="slack_api"      data-memo-placeholder="Slack API token placed on Will's laptop"><a href="#" class="icon icon-slackapi"><span class="title">Slack API key</span><div class="explanation">Alert when Slack API key is used</div></a></li>
+ <!-- SVN Token                  <li data-type="svn"            data-memo-placeholder="SVN token on REPO01/ourmainrepo"><a href="#" class="icon icon-svn"><span class="title">SVN</span><div class="explanation">Alert when someone checks out an SVN repository</div></a></li>
+      SVN Token --> 
+<!--  AWS Keys                  <li data-type="aws_keys"       data-memo-placeholder="AWS keys placed on Jim's laptop"><a href="#" class="icon icon-aws"><span class="title">AWS keys</span><div class="explanation">Alert when AWS key is used</div></a></li>
+      AWS Keys  --> 
+                   <li data-type="fast_redirect"  data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-redirect"><span class="title">Fast Redirect</span><div class="explanation">Alert when a URL is visited, User is redirected</div></a></li>
+ <!-- Slow Redirect (Broken?)                  <li data-type="slow_redirect"  data-memo-placeholder="URL within Dropbox"><a href="#" class="icon icon-redirect"><span class="title">Slow Redirect</span><div class="explanation">Alert when a URL is visited, User is redirected (Moar info is grabbed!)</div></a></li>
+      Slow Redirect -->
+<!--  Slack API                  <li data-type="slack_api"      data-memo-placeholder="Slack API token placed on Will's laptop"><a href="#" class="icon icon-slackapi"><span class="title">Slack API key</span><div class="explanation">Alert when Slack API key is used</div></a></li>
+      Slack API      -->
                   </ul>
                 </div>
               </div>
