@@ -26,7 +26,7 @@ except ImportError:
 class EmailOutputChannel(OutputChannel):
     CHANNEL = OUTPUT_CHANNEL_EMAIL
 
-    DESCRIPTION = 'Collabtool Token Triggered!'
+    DESCRIPTION = 'Collabtools Token Triggered!'
     TIME_FORMAT = '%Y-%m-%d %H:%M:%S (UTC)'
 
     def format_report_html(self,):
